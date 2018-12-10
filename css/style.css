@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.banner-container{
+    width: 1200px;
+    height: 460px;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner{
+    width: 1200px;
+    height: 460px;
+    position: absolute;
+    display: none;
+}
+
+.banner-slide1{
+    background: url("../img/bg1.jpg") no-repeat;
+}
+.banner-slide2{
+    background: url("../img/bg2.jpg") no-repeat;
+
+}
+.banner-slide3{
+    background: url("../img/bg3.jpg") no-repeat;
+}
+
+.banner-container .banner.active{
+    display: block;
+}
+
+.button:hover{
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+.button{
+    background: url("../img/arrow.png") center center no-repeat;
+    position: absolute;
+    width: 35px;
+    height: 80px;
+}
+
+.prev{
+    top: 50%;
+    left: 0px;
+    margin-top: -40px;
+    transform: rotate(180deg);
+}
+.next{
+    top: 50%;
+    right: 0;
+    margin-top: -40px;
+}
+.dot{
+    position: absolute;
+    right: 5px;
+    bottom: 25px;
+}
+.dot span{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.6);
+    display: inline-block;
+    margin-right: 10px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+.dot span.active{
+    background-color:rgba(255, 255, 255, 0.8);
+}

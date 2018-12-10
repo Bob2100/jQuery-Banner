@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--轮播图容器-->
+    <div class="banner-container">
+        <!--三张图片-->
+        <a href="#">
+            <div class="banner banner-slide1 active"></div>
+        </a>
+        <a href="#">
+            <div class="banner banner-slide2"></div>
+        </a>
+        <a href="#">
+            <div class="banner banner-slide3"></div>
+        </a>
+        <a href="javascript:;" class="button prev"></a>
+        <a href="javascript:;" class="button next"></a>
+        <div class="dot">
+            <span class="active" index="0"></span>
+            <span index="1"></span>
+            <span index="2"></span>
+        </div>
+    </div>
+    <script src="jquery/jquery-3.3.1.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        var $a = $('<a></a>').attr('href', 'eee');
+        console.log($a[0]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--轮播图容器-->
+    <div class="banner-container"></div>
+
+    <script src="jquery/jquery-3.3.1.js"></script>
+    <script src="js/jquery-banner.js"></script>
+    <script>
+        //图片路径相对于当前html页面
+        var banners = [{
+            url: './img/bg1.jpg',
+            href: 'http://www.taobao.com'
+        },{
+            url: './img/bg2.jpg',
+            href: '#'
+        },{
+            url: './img/bg3.jpg',
+            href: '#'
+        }];
+
+        $('.main').bobBanner(banners);
+    </script>
+</body>
+</html>
